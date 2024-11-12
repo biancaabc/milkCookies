@@ -1,0 +1,96 @@
+//the player size should be (18,18)
+
+function loadLevelOne(){
+  bgColour = "#84a98c"
+  w=[]
+  
+   this.teleport = function (){
+    if(p.x < 0)
+      p.x = 595
+    if(p.x > 600)
+      p.x = 5
+  }
+  
+  //main walls
+  w.push(new Wall(0, 0, width, 20,"#2f3e46",true))
+  //side wall L
+  w.push(new Wall(0, 0, 20, 190,"#2f3e46",true)) 
+  w.push(new Wall(0, 210, 20, height, "#2f3e46",true))
+  
+  w.push(new Wall(0, 380, width, 20,"#2f3e46",true))
+  //side wall R
+  w.push(new Wall(580, 0, 20, 190,"#2f3e46",true))
+  w.push(new Wall(580, 210, 20, height,"#2f3e46",true))
+  
+  
+  //game walls
+  w.push(new Wall(20,20,80,20,"#2f3e46",true))
+  w.push(new Wall(20,40,20,80,"#2f3e46",true))
+  w.push(new Wall(20,120,80,40,"#2f3e46",true))
+  w.push(new Wall(20,160,40,30,"#2f3e46",true))
+  
+  w.push(new Wall(20,210,40,30,"#2f3e46",true))
+  w.push(new Wall(20,240,80,40,"#2f3e46",true))
+  w.push(new Wall(20,280,20,80,"#2f3e46",true))
+  w.push(new Wall(20,360,80,20,"#2f3e46",true))
+
+  w.push(new Wall(60,60,40,40,"#2f3e46",true))
+  w.push(new Wall(60,300,40,40,"#2f3e46",true))
+  
+  w.push(new Wall(80,180,60,40,"#2f3e46",true))
+  
+  w.push(new Wall(120,40,20,120,"#2f3e46",true))
+  w.push(new Wall(120,240,20,120,"#2f3e46",true))
+  
+  w.push(new Wall(160,20,20,80,"#2f3e46",true))
+  w.push(new Wall(160,120,20,160,"#2f3e46",true))
+  w.push(new Wall(160,300,20,80,"#2f3e46",true))
+  
+  w.push(new Wall(200,40,20,140,"#2f3e46",true))
+  w.push(new Wall(200,200,20,160,"#2f3e46",true))
+  
+  w.push(new Wall(220,100,40,40,"#2f3e46",true))
+  w.push(new Wall(220,300,40,40,"#2f3e46",true))
+  
+  w.push(new Wall(240,40,120,40,"#2f3e46",true))
+  w.push(new Wall(240,160,40,20,"#2f3e46",true))
+  w.push(new Wall(240,180,20,20,"#2f3e46",true))
+  w.push(new Wall(240,200,120,20,"#2f3e46",true))
+  w.push(new Wall(240,240,120,40,"#2f3e46",true))
+  w.push(new Wall(240,360,120,20,"#2f3e46",true))
+  
+  w.push(new Wall(280,80,40,60,"#2f3e46",true))
+  w.push(new Wall(280,280,40,60,"#2f3e46",true))
+  
+  w.push(new Wall(320,160,40,20,"#2f3e46",true))
+
+  w.push(new Wall(340,100,40,40,"#2f3e46",true))
+  w.push(new Wall(340,180,20,20,"#2f3e46",true))
+  w.push(new Wall(340,300,40,40,"#2f3e46",true))
+  
+  w.push(new Wall(380,40,20,140,"#2f3e46",true))
+  w.push(new Wall(380,200,20,160,"#2f3e46",true))
+
+  w.push(new Wall(420,20,20,80,"#2f3e46",true))
+  w.push(new Wall(420,120,20,160,"#2f3e46",true))
+  w.push(new Wall(420,300,20,80,"#2f3e46",true))
+
+  w.push(new Wall(460,40,20,120,"#2f3e46",true))
+  w.push(new Wall(460,180,60,40,"#2f3e46",true))
+  w.push(new Wall(460,240,20,120,"#2f3e46",true))
+  
+  w.push(new Wall(500,20,80,20,"#2f3e46",true))
+  w.push(new Wall(500,60,40,40,"#2f3e46",true))
+  w.push(new Wall(500,120,80,40,"#2f3e46",true))
+  w.push(new Wall(500,240,80,40,"#2f3e46",true))
+  w.push(new Wall(500,300,40,40,"#2f3e46",true))
+  w.push(new Wall(500,360,80,20,"#2f3e46",true))
+
+  w.push(new Wall(540,160,40,30,"#2f3e46",true))
+  w.push(new Wall(540,210,40,30,"#2f3e46",true))
+
+  w.push(new Wall(560,40,20,80,"#2f3e46",true))
+  w.push(new Wall(560,280,20,80,"#2f3e46",true))
+
+  
+} 
